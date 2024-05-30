@@ -50,7 +50,7 @@ float sens[4] = {1.0, 1.0, 1.0, 1.0};
 
 
 # How to add Syntax for other boards???
-(To be added at a later date for if people besides myself are ever actually interested this repo)
+(To be added at a later date for if people besides myself are ever actually interested in this repo)
 
 
 
