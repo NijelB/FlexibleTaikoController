@@ -1,5 +1,5 @@
 # FlexibleTaikoController
-A remake of LuiCats' ArduinoTaikoController that allows for way easier code modification. Originally this was just a fork, but so many things ended up changing that I deleted the fork and published it in its own repo.
+A remake of LuiCats' ArduinoTaikoController for making DIY tatacons. Originally this was just a fork, but so many things ended up changing that I deleted the fork and published it in its own repo.
 
 # List of changes:
 
