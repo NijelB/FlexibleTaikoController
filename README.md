@@ -20,6 +20,9 @@ A remake of LuiCats' ArduinoTaikoController for making DIY tatacons. Originally 
 
 This will work with basically every microcontroller that has analog pins and support for HID output (provided you set up said micro controllers HID library). For instance the Teensy 4.0 has a joystick and keyboard library but they dont use the same syntax as the Arduino Pro Micro and ESP32s2 / ESP32s3s' joystick and keyboard Libraries. The current ino file is setup for an ESP32S3, by adding a // infront of the #define ESP32 line at the top, it will work with an Arduino Micro.
 
+# License:
+MIT License, use it for whatever you want (within the bounds of the MIT License (very flexible)), sell it, sell things that use it, even if just one person ever ends up using this repo I will be happy
+
 # Setup 
 Almost identical to LuiCats original code so go read that here, the main difference is these adjustable variables below: https://github.com/LuiCat/ArduinoTaikoController/tree/master
 
