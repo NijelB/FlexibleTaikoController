@@ -8,17 +8,15 @@
 
 //pin definitions, place in the order of left ka, left don, right don, right ka
 const int sensorPins[] {A7, A5, A4, A6};
-const int potPins[] {A3, A2, A0, A1}; //
-const int ledPins[] {D5, D4, D2, D3}; //3 4 5 2
 
 //logic variables
 unsigned long loopTime = 300; //How often to loop in micro seconds
-int defaultThreshold[] = {200, 200, 200, 200};
-int threshold[] = {200, 200, 200, 200}; //The threshold
+int defaultThreshold[] = {50, 50, 50, 50}; //The static threshold
+int threshold[] = {200, 200, 200, 200}; //The dynamic threshold
 const float cd_length = 20; //How long a sensor is on cooldown after being hit in milliseconds
 const float k_threshold = 4; //How much the threshold gets bumped when an input happens
 const float k_decay = 0.98; //How much to decay the threshold by each tick
-float sens[4] = {1.0, 1.0, 10.0, 1.0}; //Sensor sensitivity modifiers
+float sens[4] = {1.0, 1.0, 1.0, 1.0}; //Sensor sensitivity modifiers
 int raw[4] = {0, 0, 0, 0}; 
 float level[4] = {0, 0, 0, 0};
 long cd[4] = {0, 0, 0, 0}; //Sensor cooldown
@@ -41,6 +39,12 @@ unsigned long lastDebug = 0;
 #ifdef ADJ_COLOR
   const int donColorPins[] {0, 0, 0}; //Place in the order RGB
   const int kaColorPins[] {0, 0, 0};
+#endif
+#ifdef ADJ_POTS
+  const int potPins[] {A3, A2, A0, A1};
+#endif
+#ifdef ENABLE_LEDS
+  const int ledPins[] {D5, D4, D2, D3};
 #endif
 
 //sample a single sensor
