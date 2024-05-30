@@ -4,6 +4,7 @@ A remake of LuiCats' ArduinoTaikoController that allows for way easier code modi
 # List of changes:
 
 ## Pros:
+- WAY easier to add custom code / features, if you'd like to use this on a micro controller that you cant use LuiCats' code on it is going to be trivial to add support for it in this script
 - Reduced line count
 - Increased readability with explanations for almost every variable
 - Easily changable output, E.G adding XInput, Joystick, etc... requires very little modification
